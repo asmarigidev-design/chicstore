@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+// کامپوننت هدر شامل منو و لوگو - Header component with menu and logo
+import Header from './components/Header.js';
+// کامپوننت اسلایدر صفحه اصلی - Main page slider component
+import Slider from './components/Slider.js';
+// محتوای اصلی صفحه - Main content section
+import MainContent from './components/MainContent';
+// سایدبار شامل ابزارها یا پیشنهادها - Sidebar with tools or suggestions
+import Sidebar from './components/Sidebar.js';
+// کامپوننت فوتر شامل اطلاعات تماس و لینک‌ها - Footer with contact info and links
+import Footer from './components/Footer.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* ترتیب نمایش اجزای صفحه - Page layout structure */}
+      <Header />
+      <Slider />
+      <MainContent />
+      <Sidebar />
+      <Footer />
+    </>
   );
 }
 
