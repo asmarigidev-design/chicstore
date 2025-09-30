@@ -102,8 +102,11 @@ const Header = () => {
                   </ul>
                 </li>
                 {/* آیکون جستجو - Search icon */}
-                <li className="search-form" onClick={() => setSearchVisible(!isSearchVisible)}>
-                  <a href="/"><i className="fas fa-search"></i></a>
+                <li className="search-form" onClick={(e) => {
+                  e.preventDefault();
+                  setSearchVisible(!isSearchVisible);
+                }}>
+                  <a href="#"><i className="fas fa-search"></i></a>
                 </li>
               </ul>
               {/* دکمه درخواست محصول - Product request button */}
