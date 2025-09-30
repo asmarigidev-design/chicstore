@@ -448,7 +448,7 @@ header .navbar .social button:hover{
 
 .slider-item .item .caption{
   position: relative;
-  width: 1200px;
+  width: 900px;
   margin: auto;
   z-index: 10;
 }
@@ -1416,7 +1416,6 @@ header .navbar .menu > ul > .close-icon{
   }
   .slider-item .item .caption {
       width: 60vw;
-      top: -150px;
   }
   .slider-item .item .caption h1{
       font-size: 20px;
